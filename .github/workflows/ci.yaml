@@ -11,7 +11,7 @@ on:
         - 'README.md'
 
 
-permission:
+permissions:
   contents: read
 
 jobs:
@@ -22,12 +22,12 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest]
         python-version: ["3.8","3.9"]
-
+    
     steps:
     - uses: actions/checkout@v3
-    - name: set up python ${{ matrix.python-version }}
+    - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
-      with:
+      with: 
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
