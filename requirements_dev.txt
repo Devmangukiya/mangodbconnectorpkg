@@ -1,5 +1,5 @@
-pymango
-pymango[srv]
+pymongo
+pymongo[srv]
 dnspython
 pandas
 numpy
